@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Actor</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_fragment_billboard">Billboard</string>
+    <string name="title_fragment_billboard">Actor Billboard</string>
+    <string name="title_new_Actor">New Actor</string>
+    <string name="name_hint_editText">Name</string>
+    <string name="age_hint">Age</string>
+    <string name="content_actor_name">Actor</string>
+    <string name="age_context">27</string>
 </resources>

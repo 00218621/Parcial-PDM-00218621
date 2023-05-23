@@ -8,7 +8,7 @@
         >
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/pokemon_item_cardView"
+            android:id="@+id/actor_item_cardView"
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_card"
             android:layout_margin="16dp"
@@ -35,41 +35,34 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/pokemon" />
+                        android:src="@drawable/actor" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="30dp"
-
+                    android:gravity="center_vertical"
                     android:backgroundTint="@color/cardLayout"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/name_pokemon"
+                        android:id="@+id/name_actor"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pokemon"
+                        android:text="@string/content_actor_name"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
 
                     <TextView
-                        android:id="@+id/type_text"
+                        android:id="@+id/age_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="normal"
+                        android:text="@string/age_context"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
 
-                    <TextView
-                        android:id="@+id/qualification_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="9.0"
-                        android:textColor="@color/qualification"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
+
                 </LinearLayout>
 
             </LinearLayout>

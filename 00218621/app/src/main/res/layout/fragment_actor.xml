@@ -2,11 +2,11 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.pokemon.PokemonFragment">
+    tools:context=".ui.pokemon.ActorFragment">
     <data>
         <variable
             name="viewModel"
-            type="com.example.repasoparcial.ui.pokemon.viewmodel.PokemonViewModel" />
+            type="com.example.repasoparcial.ui.actor.viewmodel.ActorViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -27,12 +27,12 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/pokemon" />
+                android:src="@drawable/actor" />
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/name_pokemon_text"
+            android:id="@+id/name_actor_text"
             android:layout_width="wrap_content"
             android:text="@={viewModel.name}"
             android:layout_height="wrap_content"
@@ -44,9 +44,9 @@
             android:contentDescription="Name"/>
 
         <TextView
-            android:id="@+id/type_pokemon_text"
+            android:id="@+id/age_actor_text"
             android:layout_width="wrap_content"
-            android:text="@={viewModel.type}"
+            android:text="@={viewModel.age}"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/marginTop_title"
             android:contentDescription="Tyṕe"
@@ -54,18 +54,8 @@
 
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_pokemon_text" />
+            app:layout_constraintTop_toBottomOf="@+id/name_actor_text" />
 
-        <TextView
-            android:layout_marginTop="@dimen/marginTop_title"
-            android:text="@={viewModel.qualification}"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:textSize="25sp"
-            android:contentDescription="Qualification"
-            app:layout_constraintTop_toBottomOf="@+id/type_pokemon_text" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
