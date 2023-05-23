@@ -9,7 +9,7 @@ val age = "27"
 val name1 = "William Perdomo Anaya"
 val age1 = "32"
 
-val Actors= mutableListOf(
+val actors= mutableListOf(
     ActorModel(name,age),
     ActorModel(name1, age1)
 )
