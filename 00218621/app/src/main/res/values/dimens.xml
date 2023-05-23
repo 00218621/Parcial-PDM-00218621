@@ -24,4 +24,5 @@
     <dimen name="marginStart_Image">30dp</dimen>
     <dimen name="textSize_ItemActor">25sp</dimen>
     <dimen name="margin_CardView">16dp</dimen>
+    <dimen name="size_text">25sp</dimen>
 </resources>
