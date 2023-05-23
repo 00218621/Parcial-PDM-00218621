@@ -16,8 +16,10 @@ class ActorViewModel(private val repository: ActorRepository): ViewModel() {
 
     //TODO: List actors
     fun getActors()= repository.getActor()
+
     //TODO: Insert actors
     fun addActors(actor: ActorModel)=repository.addActors(actor)
+
     //TODO: Validator Data Insert
     private fun validateData(): Boolean{
         when{
@@ -26,20 +28,24 @@ class ActorViewModel(private val repository: ActorRepository): ViewModel() {
         }
         return true
     }
+
     //TODO: Clear content
     fun clearData(){
         name.value = ""
         age.value = ""
     }
+
     //TODO: Clear status
     fun clearStatus(){
         status.value = INACTIVE
     }
+
     //TODO: Select Actor
     fun setSelectedActor(actor: ActorModel){
         name.value = actor.name
         age.value = actor.age
     }
+
     //TODO: Create new Actor
     fun createActor(){
         if(!validateData()){

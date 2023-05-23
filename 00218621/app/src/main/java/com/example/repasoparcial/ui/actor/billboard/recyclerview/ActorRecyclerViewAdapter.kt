@@ -15,6 +15,7 @@ class ActorRecyclerViewAdapter(private val clickListener: (ActorModel) -> Unit
         return ActorRecyclerViewHolder(binding)
     }
 
+    //TODO: Count of Item Actor
     override fun getItemCount(): Int {
         return actors.size
     }
@@ -24,6 +25,7 @@ class ActorRecyclerViewAdapter(private val clickListener: (ActorModel) -> Unit
         holder.bind(pokemon,clickListener)
     }
 
+    //TODO: List of Actors
     fun setData(actorList: List<ActorModel>){
         actors.clear()
         actors.addAll(actorList)

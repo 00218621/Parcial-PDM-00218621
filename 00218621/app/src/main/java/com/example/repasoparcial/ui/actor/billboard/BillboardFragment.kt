@@ -21,10 +21,9 @@ class BillboardFragment : Fragment() {
     private val actorViewModel: ActorViewModel by activityViewModels{
         ActorViewModel.Factory
     }
+
     private lateinit var binding: FragmentBillboardBinding
     private lateinit var adapter: ActorRecyclerViewAdapter
-
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,21 +40,19 @@ class BillboardFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         setRecyclerView(view)
-
         binding.btnNavNewActor.setOnClickListener {
             actorViewModel.clearData()
             it.findNavController().navigate(R.id.action_billboardFragment_to_newActorFragment)
         }
     }
 
-
+    //TODO: Display actors and NotifyData insert
     private fun displayActors(){
         adapter.setData(actorViewModel.getActors())
         adapter.notifyDataSetChanged()
     }
-
+    //TODO: RecyclerView
     private fun setRecyclerView(view: View){
         binding.recyclerView.layoutManager = LinearLayoutManager(view.context)
         adapter = ActorRecyclerViewAdapter{ selectedActor ->

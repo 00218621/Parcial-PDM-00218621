@@ -11,10 +11,10 @@
             android:id="@+id/actor_item_cardView"
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_card"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/margin_CardView"
             android:backgroundTint="@color/cardLayout"
             android:layout_marginTop="@dimen/margin_extra_gap"
-            app:cardCornerRadius="15dp"
+            app:cardCornerRadius="@dimen/CornerRadius_CardView"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints">
 
@@ -26,11 +26,11 @@
                 android:backgroundTint="@color/cardLayout">
 
                 <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
+                    android:layout_width="@dimen/image_width_itemActor"
+                    android:layout_height="@dimen/image_height_itemActor"
 
                     android:backgroundTint="@color/cardLayout"
-                    android:layout_marginLeft="25dp">
+                    android:layout_marginLeft="@dimen/marginLeft_Image">
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -41,7 +41,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="30dp"
+                    android:layout_marginStart="@dimen/marginStart_Image"
                     android:gravity="center_vertical"
                     android:backgroundTint="@color/cardLayout"
                     android:orientation="vertical">
@@ -52,7 +52,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/content_actor_name"
                         android:textColor="@color/white"
-                        android:textSize="25sp" />
+                        android:textSize="@dimen/textSize_ItemActor" />
 
                     <TextView
                         android:id="@+id/age_text"
@@ -60,8 +60,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/age_context"
                         android:textColor="@color/white"
-                        android:textSize="25sp" />
-
+                        android:textSize="@dimen/textSize_ItemActor" />
 
                 </LinearLayout>
 

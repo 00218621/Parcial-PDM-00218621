@@ -18,7 +18,6 @@ class ActorFragment : Fragment() {
 
     private lateinit var binding: FragmentActorBinding
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setViewActor()

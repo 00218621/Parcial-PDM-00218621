@@ -14,11 +14,12 @@ import com.example.repasoparcial.ui.actor.viewmodel.ActorViewModel
 
 
 class NewActorFragment : Fragment() {
+
     private val actorViewModel: ActorViewModel by activityViewModels {
         ActorViewModel.Factory
     }
-    private lateinit var binding: FragmentNewActorBinding
 
+    private lateinit var binding: FragmentNewActorBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -41,6 +42,7 @@ class NewActorFragment : Fragment() {
     companion object {
         const val APP_TAG = "APP TAG"
     }
+    //TODO: Insert New Actor
     private fun observerStatus(){
         actorViewModel.status.observe(viewLifecycleOwner){ status ->
             when{

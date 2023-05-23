@@ -16,9 +16,9 @@
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="300dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="@dimen/marginTop_title"
+            android:layout_width="@dimen/Image_Width"
+            android:layout_height="@dimen/Image_Height"
+            android:layout_marginTop="@dimen/marginTop_title_ActorFragment"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -39,9 +39,8 @@
             android:layout_marginTop="@dimen/marginTop_title"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:textSize="25sp"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-            android:contentDescription="Name"/>
+            android:textSize="@dimen/textSize_name"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
         <TextView
             android:id="@+id/age_actor_text"
@@ -49,13 +48,9 @@
             android:text="@={viewModel.age}"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/marginTop_title"
-            android:contentDescription="Tyṕe"
-            android:textSize="25sp"
-
+            android:textSize="@dimen/textSize_name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/name_actor_text" />
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

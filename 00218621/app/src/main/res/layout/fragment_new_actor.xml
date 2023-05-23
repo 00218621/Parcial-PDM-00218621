@@ -20,7 +20,7 @@
             android:textColor="@color/white"
             android:layout_marginTop="@dimen/marginTop_title"
             android:text="@string/title_new_Actor"
-            android:textSize="45sp"
+            android:textSize="@dimen/texSize_titleNewActor"
             android:textStyle="bold"
             android:id="@+id/textView"
             app:layout_constraintTop_toTopOf="parent" />
@@ -28,7 +28,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/name_editText"
             android:layout_width="match_parent"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/marginEditText"
             android:layout_height="wrap_content"
             android:hint="@string/name_hint_editText"
             android:textColorHint="@color/white"
@@ -37,8 +37,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:text="@={viewModel.name}"
-                android:layout_height="70dp"
-                android:background="@color/cardLayout"
+                android:layout_height="@dimen/heightEditText"
+                android:background="@color/EditTextColor"
                 android:layout_marginTop="35dp"
                 android:textSize="25sp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -46,7 +46,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/age_editText"
             android:layout_width="match_parent"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/marginEditText"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_extra_gap"
             android:hint="@string/age_hint"
@@ -55,19 +55,21 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:text="@={viewModel.age}"
-                android:layout_height="70dp"
-                android:background="@color/cardLayout"
-                android:textSize="25sp" />
+                android:layout_height="@dimen/heightEditText"
+                android:background="@color/EditTextColor"
+                android:textSize="@dimen/textSizeEditText" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
-            android:layout_width="120dp"
-            android:layout_height="60dp"
+            android:layout_width="@dimen/widthButton_NewActor"
+            android:layout_height="@dimen/heightButton_NewActor"
             android:text="Submit"
+            android:textColor="@color/black"
             android:onClick="@{() -> viewModel.createActor()}"
-            android:textSize="20sp"
+            android:textSize="@dimen/textSizeEditText"
             android:layout_marginTop="@dimen/marginTop_title"
+            android:backgroundTint="@color/buttonColor"
             app:layout_constraintEnd_toEndOf="@+id/age_editText"
             app:layout_constraintStart_toStartOf="@+id/age_editText"
             app:layout_constraintTop_toBottomOf="@+id/age_editText" />
